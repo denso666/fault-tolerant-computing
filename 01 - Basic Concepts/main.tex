@@ -1,0 +1,69 @@
+\documentclass{dense_template}
+\newcommand*{\name}{Felipe Alejandro Jiménez Castillo}
+\newcommand*{\code}{215671386}
+\newcommand*{\school}{Universidad de Guadalajara - CUCEI}
+\newcommand*{\course}{Computación Tolerante a Fallas}
+\newcommand*{\assignment}{Conceptos Básicos }
+\renewcommand{\contentsname}{Contenido}
+
+\begin{document}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\newpage
+%%%%%%%%%%%%%%%%%%%%
+\section{Introducción}
+La computación tolerante a fallas aporta, en los sistemas computacionales, una mayor fiabilidad, esto mediante el manejo de fallas en ambientes computacionales complejos. Además, la creciente dependencia de la sociedad de sistemas informáticos bien diseñados y que funcionen bien ha llevado a una creciente demanda de sistemas fiables, sistemas con propiedades cuantificables de fiabilidad.
+%%%%%%%%%%%%%%%%%%%%
+\section{Desarrollo}
+\begin{enumerate}
+    \item ¿Qué son los sistemas tolerantes a fallos?
+    \begin{enumerate}
+        \item Un sistema tolerante a fallas es aquel que hace uso de componentes, que automáticamente, toman lugar y acciones cuando otros componentes fallan, asegurándose de no tener perdidas de servicios. Un sistema tolerante a fallas incluye aquellos que aseguran \textit{Hardware}, \textit{Software} y \textit{Power Sources}.
+    \end{enumerate}
+    \item ¿Qué es un fallo (\textit{fault})?
+    \begin{enumerate}
+        \item Un fallo es aquel defecto en programas o procesos que producen resultados inesperados o incorrectos. Los fallos pueden ocurrir en diferentes etapas del software (\textit{diseño, desarrollo y despliegue}) y pueden ser de diferentes tipos (\textit{código, diseño, requerimientos o etc.}), por lo que es vital el proceso de identificación y resolución de los mismos, pero también el pre-análisis para prevención y detección que puede ahorrar tiempo y recursos. 
+    \end{enumerate}
+    \item ¿Qué es un error (\textit{error})?
+    \begin{enumerate}
+        \item Un error es el comportamiento incorrecto de un sistema, el cual se causó por una falla. Los errores se pueden clasificar en dos tipos, errores de valor o tiempo, así mismo estos se pueden representar con una variedad de situaciones, como errores de condición de carrera, ciclos infinitos, errores de protocolo, inconsistencia de datos, etc.; Todos estos errores pueden causar el fracaso del sistema si estos se desvían de las especificaciones del mismo. Los errores son importantes cuando se habla acerca de la tolerancia a fallas, debido a que los errores pueden ser detectados antes de que se cause un fracaso en el sistema.
+    \end{enumerate}
+    \item ¿Qué es un fracaso o avería (\textit{failure})?
+    \begin{enumerate}
+        \item El fracaso se refiere al comportamiento del sistema que no se ajusta a la especificación de él mismo y es causado por fallas y errores. Los fracasos normalmente son detectados por los usuarios u observadores, ya que están previstos en el funcionamiento.
+    \end{enumerate}
+    \item ¿Qué es la latencia de un fallo?
+    \begin{enumerate}
+        \item Tiempo que transcurre desde que se produce un fallo hasta que se manifiesta el error.
+    \end{enumerate}
+    \item ¿Qué es la latencia de un error?
+    \begin{enumerate}
+        \item Tiempo transcurrido entre la aparición de un error y la manifestación de un error en el exterior del sistema.
+    \end{enumerate}
+\end{enumerate}
+%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%
+\section{Conclusión}
+Es interesante denotar la diferencia que existe entre las "\textit{etapas}"  del proceso de fallo, o manifestación de un comportamiento no esperado, ya que esto nos deja suponer las fases internas que pueden ser generadas, o bien realizadas, para hacer más robusto nuestro sistema, de manera que tenga más sentido la "Tolerancia a fallas". Además, es importante denotar la cadena de sucesos, desde que ocurre una falla, está genera un error y finalmente una avería o fracaso del sistema, para poder entender y ser más consciente del proceso que debemos realizar o idealizar al tratar de solucionar y resolver fallas. 
+%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+%%%%%%%%%%%%%%%%%%%%
+\section{Bilbiografia}
+\sloppy
+\begin{enumerate}
+    \item Gärtner, F. C. (1999). Fundamentals of fault-tolerant distributed computing in asynchronous environments. ACM Computing Surveys (CSUR), 31(1), 1-26.
+    \item Fault tolerance. (n.d.). Learning Center; Imperva Inc. Retrieved August 15, 2023, from https://www.imperva.com/learn/availability/fault-tolerance/
+    \item Follow, I. (2020, November 1). Introduction to faults in software engineering. GeeksforGeeks. https://www.geeksforgeeks.org/introduction-to-faults-in-software-engineering/
+    \item Koren, I., \& Mani Krishna, C. (2020). Fault-tolerant systems (2nd ed.). Morgan Kaufmann.
+    \item Hanmer, R. (2007). Patterns for Fault Tolerant Software. John Wiley \& Sons.
+    \item (N.d.). Uva.Es. Retrieved August 16, 2023, from https://www.infor.uva.es /~bastida/ Arquitecturas\% 20Avanzadas/ Tolerant.pdf
+
+
+\end{enumerate}
+\end{document}
+
+
+
+
