@@ -1,6 +1,6 @@
 import express from 'express';
 import path from 'path';
-import checkpoint from './checkpoint.js';
+import Checkpoint from './checkpoint.js';
 
 // app config
 const __dirname = path.resolve();
@@ -8,33 +8,34 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// routes
+const words = ["Rust", "is", "blazingly", "fast", "and", "memory-efficient:", "with", "no", "runtime", "or", "garbage", "collector,", "it", "can", "power", "performance-critical", "services,", "run", "on", "embedded", "devices,", "and", "easily", "integrate", "with", "other", "languages."];
+
+// main route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src/views/index.html'))
 });
-app.get('/click', (req, res) => {
-    res.json(checkpoint.getCheckpoint());
-});
-app.post('/click', (req, res) => {
-    const { clicks } = req.body;
-    checkpoint.setCheckpoint({
-        "clicks": parseInt(clicks),
-        "checkpoint": Date.now()
-    });
 
-    res.json(checkpoint.getCheckpoint());
+// typing routes
+app.get('/restart', (req, res) => {
+    const checkpoint = Date.now();
+    Checkpoint.cleanCheckpoint(checkpoint);
+    res.json({"get": true, "checkpoint": checkpoint});
 });
 app.get('/word', (req, res) => {
-    res.json(checkpoint.getCheckpoint());
+    res.json({
+        ...Checkpoint.getCheckpoint(),
+        "paragraph": words
+    });
 });
 app.post('/word', (req, res) => {
-    const { word_idx, paragraph_status, paragraph } = req.body;
-    checkpoint.setCheckpoint({
+    const { word_idx, paragraph_status } = req.body;
+    const checkpoint = Date.now();
+    Checkpoint.setCheckpoint({
         "word_idx": parseInt(word_idx),
         "paragraph_status": paragraph_status,
-        "paragraph": paragraph,
-        "checkpoint": Date.now()
-    })
+        "checkpoint": checkpoint
+    });
+    res.json({"post": true, "checkpoint": checkpoint});
 });
 
 // listener

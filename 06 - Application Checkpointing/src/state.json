@@ -1,7 +1,33 @@
 {
-    "clicks": 85,
-    "checkpoint": 1693797889165,
-    "word_idx": 0,
-    "paragraph_status": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "paragraph": ["Rust", "is", "blazingly", "fast", "and", "memory-efficient:", "with", "no", "runtime", "or", "garbage", "collector,", "it", "can", "power", "performance-critical", "services,", "run", "on", "embedded", "devices,", "and", "easily", "integrate", "with", "other", "languages."]
+    "word_idx": 6,
+    "paragraph_status": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+    ],
+    "checkpoint": 1693837481195
 }
