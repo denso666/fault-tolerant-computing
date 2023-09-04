@@ -47,8 +47,8 @@
          */
         function restart() {
             fetch("/restart", { method: "GET" })
+                .then(data => window.location.reload())
                 .catch(error => console.log(error));
-            window.location.reload();
         }
         /**
          * Update word span by status
