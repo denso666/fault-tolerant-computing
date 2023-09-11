@@ -1,0 +1,19 @@
+{
+  "name": "07---threads-and-more",
+  "version": "1.0.0",
+  "description": "This _Typing Test_ application has a checkpointing system, it restore his status on any moment, providing a status restore subsystem.",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
