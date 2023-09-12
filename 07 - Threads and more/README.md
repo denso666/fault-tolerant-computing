@@ -5,5 +5,5 @@ This _Typing Test_ application has a checkpointing system, it restore his status
 
 ### Need to know
 - The application works as a npm basic project, see `package.json` to clear dependecies.
-- Run `yarn install` and then `yarn run dev` to start the application.
+- Run, into the `app` folder, `yarn install` and then `yarn run dev` to start the application.
 - Go to `http://localhost:3000` or `http://localhost:3000/history` and enjoy :).
