@@ -1,0 +1,1 @@
+https://man.archlinux.org/man/notify-send.1.en
